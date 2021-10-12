@@ -17,3 +17,4 @@ if (country != "Brasil") {
 } else {
     console.log("Você é brasileiro");
 }
+// condição aninhada
