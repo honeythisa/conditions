@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,22 +8,20 @@
     <style>
         body {
             background-color: rgb(105, 105, 173);
-            color: rgb(228, 227, 227);
+            color:rgb(228, 227, 227);
             font: normal 20pt Arial;
             text-align: center;
         }
-
         h1 {
-            color: white;
+            color:white;
         }
-
-        .main {
+            .main{
             margin-top: 20%;
         }
+    
     </style>
 
 </head>
-
 <body>
     <h1>Hello, World!</h1>
     <p>Pronto, me livrei da maldição.</p>
@@ -34,21 +31,20 @@
 
     <script>
         function verificar() {
-            let txtp = window.document.querySelector('input#txtpais').value.toLowerCase();
+            let txtp = window.document.querySelector('input#txtpais');
             let res = window.document.querySelector('div#res');
             let tipo = String(txtp.value);
-
+            
             res.innerHTML = `<p>Seu país: <strong>${tipo}</strong></p>`;
 
             if (tipo == "Brasil") {
                 res.innerHTML += 'Você é brasileiro!';
-
+                    
             } else {
-                res.innerHTML = 'Você é estrangeiro.';
+                res.innerHTML += 'Você é estrangeiro.';
             }
         } window.alert('Lembre-se que nome de país se escreve com a primeira letra maiúscula.');
     </script>
     <!--adicionando um comentário-->
 </body>
-
 </html>
