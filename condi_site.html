@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color:rgb(228, 227, 227);
+            font: normal 20pt Arial;
+            text-align: center;
+        }
+        h1 {
+            color:white;
+        }
+            .main{
+            margin-top: 20%;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>Pronto, me livrei da maldição.</p>
+    De qual país você é?: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar() {
+            let txtp = window.document.querySelector('input#txtpais');
+            let res = window.document.querySelector('div#res');
+            let tipo = String(txtp.value);
+            
+            res.innerHTML = `<p>Seu país: <strong>${tipo}</strong></p>`;
+
+            if (tipo == "Brasil") {
+                res.innerHTML += 'Você é brasileiro!';
+                    
+            } else {
+                res.innerHTML = 'Você é estrangeiro.';
+            }
+        } window.alert('Lembre-se que nome de país se escreve com a primeira letra maiúscula.');
+    </script>
+
+</body>
+</html>
