@@ -11,6 +11,7 @@ if (hora < 12) {
     console.log ("Boa noite Bruno")
 }
 console.log(" ")
+
 // Escrever o dia da semana conforme o dia
 let hoje = new Date()
 let diaSem = hoje.getDay()
@@ -23,7 +24,7 @@ let diaSem = hoje.getDay()
     5 = Sexta
     6 = Sabádo
 */
-
+// condiçao multipla
 switch (diaSem) {
     case 0:
         console.log("Domingo")
@@ -50,6 +51,7 @@ switch (diaSem) {
         console.log("[ERRO] DIA INVÁLIDO")
 }
 console.log(" ")
+
 // caso seja uma cor especifica...
 let cor = "cinza"
 

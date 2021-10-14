@@ -8,6 +8,7 @@ if (velo > 60) {
 }
 console.log("Dirija sempre usando cinto de segurança!");
 console.log(" ");
+
 // condição composta
 console.log("------ conferindo a nacionalidade ------");
 let country = "EUA";
@@ -19,6 +20,7 @@ if (country != "Brasil") {
     console.log("Você é brasileiro");
 }
 console.log(" ");
+
 // condição aninhada
 console.log("------ conferindo a idade ------");
 let idade = 16;
